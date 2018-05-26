@@ -1,0 +1,45 @@
+﻿<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+		#test1 {
+		width: 600px;
+		height: 600px;
+		border:4px double black;
+		background-repeat: no-repeat;
+		float:right;
+		margin-right:350px;
+		
+		}
+		ul.hr li {
+    list-style-type: none;
+	    }
+
+		</style>
+	</head>
+	<body>
+			<div>
+				<ul class="hr">
+					<li><p onclick="Change(this)" title="1.jpg" style="cursor: pointer";><img src="1.jpg" width="120px">&nbsp;</p></li>
+					<div class="" id="test1"></div>
+					<li><p onclick="Change(this)" title="2.jpg" style="cursor: pointer";><img src="2.jpg" width="120px">&nbsp;</p></li>
+					<li><p onclick="Change(this)" title="3.jpg" style="cursor: pointer";><img src="3.jpg" width="120px">&nbsp;</p></li>
+					<li><p onclick="Change(this)" title="4.jpg" style="cursor: pointer";><img src="4.jpg" width="120px">&nbsp;</p></li>
+					<li><p onclick="Change(this)" title="5.jpg" style="cursor: pointer";><img src="5.jpg" width="120px">&nbsp;</p></li>				
+					<li><p onclick="Change(this)" title="6.jpg" style="cursor: pointer";><img src="6.jpg" width="120px">&nbsp;</p></li>
+					<li><p onclick="Change(this)" title="7.jpg" style="cursor: pointer";><img src="7.jpg" width="120px">&nbsp;</p></li>
+					<li><p onclick="Change(this)" title="8.jpg" style="cursor: pointer";><img src="8.jpg" width="120px">&nbsp;</p></li>
+					<li><p onclick="Change(this)" title="9.jpg" style="cursor: pointer";><img src="9.jpg" width="120px">&nbsp;</p></li>
+					<li><p onclick="Change(this)" title="10.png" style="cursor: pointer";><img src="10.png" width="120px">&nbsp;</p></li>
+				</ul>
+
+			</div>
+		<script>
+		function Change(el)
+		{
+		document.getElementById('test1').style.backgroundImage="url("+el.title+")";
+		
+		}
+		</script>
+	</body>
+</html>
